@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.r_main{
+	margin: 0;
+	padding: 0;
+}
+
+.r_main a{
+	text-decoration: none;
+}
+
+.r_main{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.r_main h2{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 25px;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.r_main .writebut{
+	padding: 10px 24px 20px 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.r_main #writebut{
+	font-size: 12px;
+	border: 1px solid lightgray;
+	padding: 3px 10px;
+	background-color: white;
+	color: black;
+}
+
+.r_main #writebut:hover{
+	background-color: white;
+	border-color: black;
+}
+
+#recipe_mainlist{
+	width: 850px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#recipe_mainlist #nonecontent{
+	font-size: 13px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#recipe_mainlist #r_link{
+	float: left;
+	margin-left: 25px;
+	height: 195px;
+	margin-bottom: 25px;
+}
+
+#recipe_mainlist img{
+	width: 250px;
+	height: 170px;
+	margin-bottom: 5px;
+}
+
+.product_name_title{
+	width: 250px;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+#recipe_mainlist #product_name{
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+    height: 20px;
+    line-height: 20px;
+    background-color: #80bd01;
+    border-radius: 2px;
+    padding: 0 4px;
+    margin-right: 5px;
+    white-space : nowrap;
+}
+
+#recipe_mainlist #product_name:hover{
+	background-color: #74ad01;
+}
+
+#recipe_mainlist #title{
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	color: black;
+	display: block;
+	text-overflow: ellipsis; /* width 초과 시 ...으로 표시 */
+	overflow: hidden;
+	white-space: nowrap; /* 텍스트 길이 초과 시 다음 줄로 넘어가지 않도록 */
+}
+
+/* 하단부 */
+#r_bottom{
+	font-size: 12px;
+}
+
+#r_search{
+	margin-bottom: 200px;
+}
+
+#r_search table #searchField{
+	border-color: lightgray;
+	color: rgb(59, 58, 58);
+}
+
+#r_search table #searchWord{
+	border: none;
+	border: 1px solid lightgray;
+}
+
+#r_search table #serchbut{
+	border: 1px solid lightgray;
+	padding: 3px 10px;
+	background-color: black;
+	color: white;
+}
+
+#r_search table #serchbut:hover{
+	border-color: black;
+	background-color: white;
+	color: black;
+}

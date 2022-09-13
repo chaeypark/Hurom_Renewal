@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* ----------------- */
+.index_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.index_wrap a{
+	color: black;
+    text-decoration: none;
+}
+
+.com_int{    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    width: 1380px;    
+}
+
+.com_int_logo{
+    margin-top: 150px;
+}
+
+.com_int_left{
+    margin-top: 300px;
+    padding: 30px;
+    
+}
+
+.com_int_right{
+    background-image: url(../image/index_img/company_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 500px;
+    color: white;
+    padding: 50px;
+}
+
+.com_int_right p{
+    font-size:15px;
+    padding-top: 30px;
+}
+
+/* -------------------- */
+/* 아이템소개 */
+.index_hr_green{
+    width: 150%;
+    margin-left: -25%;
+    height: 120px;
+    background-color: rgb(189, 209, 189, 0.5);    
+    text-align: center;
+}
+
+.index_item{
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+
+/* ----------------- */
+
+.index_event{
+    max-width: 1040px;
+    width: 1040px;    
+}
+
+.index_event .card{
+    max-width: 350px;
+}
+
+.index_event .card img{
+    max-width: 330px;
+}
+
+.index_item .card-title{
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 50px;
+
+}
+
+.index_item .card-text{
+    padding-top: 50px;
+    font-size: 25px;
+
+}
+.index_event{
+	width: 1200px;
+	margin: 0 auto;
+}
+.eve_title{
+    /* margin-bottom: 10px; */
+    margin-left: 15px;
+    font-weight: bold;    
+}
+
+.eve_line{
+    width: 75px;
+    height: 1px;
+    border: 1px solid green;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* ----------- */
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(65, 61, 61);
+}
+
+

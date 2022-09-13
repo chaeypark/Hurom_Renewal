@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Hurom_Renewal</display-name>
+
+	<filter>
+		<filter-name>SetCharEncoding</filter-name>
+		<filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SetCharEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<session-config>
+		<session-timeout>20</session-timeout><!-- 분단위 -->
+	</session-config>
+
+	<!-- 드라이버 이름 -->
+	<context-param>
+		<param-name>OracleDriver</param-name>
+		<param-value>oracle.jdbc.OracleDriver</param-value>
+	</context-param>
+
+	<!-- 접속 url -->
+	<context-param>
+		<param-name>OracleUrl</param-name>
+		<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+	</context-param>
+
+	<!-- 계정ID -->
+	<context-param>
+		<param-name>OracleId</param-name>
+		<param-value>test1</param-value>
+	</context-param>
+
+
+	<!-- 계정PW -->
+	<context-param>
+		<param-name>OraclePw</param-name>
+		<param-value>1234</param-value>
+	</context-param>
+	
+	<servlet>
+  		<servlet-name>SignupController</servlet-name>
+  		<servlet-class>membership.SignupController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>SignupController</servlet-name>
+	  	<url-pattern>/membership/signUp.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>LoginController</servlet-name>
+  		<servlet-class>membership.LoginController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>LoginController</servlet-name>
+	  	<url-pattern>/membership/login.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>WritingController</servlet-name>
+  		<servlet-class>recipeboard.WritingController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>WritingController</servlet-name>
+	  	<url-pattern>/recipe/write.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+  		<servlet-name>MainViewController</servlet-name>
+  		<servlet-class>recipeboard.MainViewController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>MainViewController</servlet-name>
+	  	<url-pattern>/recipe/main.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RecipeViewController</servlet-name>
+		<servlet-class>recipeboard.RecipeViewController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RecipeViewController</servlet-name>
+		<url-pattern>/recipeboard/view.do</url-pattern>
+	</servlet-mapping>
+	  <servlet>
+    <servlet-name>RecipeEditController</servlet-name>
+    <servlet-class>recipeboard.RecipeEditController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecipeEditController</servlet-name>
+    <url-pattern>/recipeboard/edit.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteController</servlet-name>
+    <servlet-class>recipeboard.DeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteController</servlet-name>
+    <url-pattern>/recipeboard/delete.do</url-pattern>
+  </servlet-mapping>
+	<!-- mvc2 customer service List-->
+	<servlet>
+  		<servlet-name>Mvc2ListController</servlet-name>
+  		<servlet-class>mvc2.ListController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2ListController</servlet-name>
+	  	<url-pattern>/mvc2/list.do</url-pattern>
+	</servlet-mapping>
+	<!-- 1:1 board -->
+	<servlet>
+  		<servlet-name>Mvc2ListControllerQNA</servlet-name>
+  		<servlet-class>mvc2.ListController2</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2ListControllerQNA</servlet-name>
+	  	<url-pattern>/mvc2/listQNA.do</url-pattern>
+	</servlet-mapping>
+	<!--  a/s component board-->
+	<servlet>
+  		<servlet-name>Mvc2ListControllerA/S</servlet-name>
+  		<servlet-class>mvc2.ListController3</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2ListControllerA/S</servlet-name>
+	  	<url-pattern>/mvc2/listAS.do</url-pattern>
+	</servlet-mapping>
+	<!-- juicer board -->
+	<servlet>
+  		<servlet-name>Mvc2ListControllerJuicer</servlet-name>
+  		<servlet-class>mvc2.JuicerListController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2ListControllerJuicer</servlet-name>
+	  	<url-pattern>/mvc2/listJuicer.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- TM board -->
+	<servlet>
+  		<servlet-name>Mvc2ListControllerTM</servlet-name>
+  		<servlet-class>mvc2.TMListController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2ListControllerTM</servlet-name>
+	  	<url-pattern>/mvc2/listTM.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- mvcwrite 1:1 -->
+	<servlet>
+  		<servlet-name>Mvc2WriteController</servlet-name>
+  		<servlet-class>mvc2.WriteController</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2WriteController</servlet-name>
+	  	<url-pattern>/mvc2/write.do</url-pattern>
+	</servlet-mapping>
+	<!-- mvcwrite component -->
+	<servlet>
+  		<servlet-name>Mvc2WriteControllerComp</servlet-name>
+  		<servlet-class>mvc2.WriteController2</servlet-class>
+  	</servlet>
+  
+	<servlet-mapping>
+	  	<servlet-name>Mvc2WriteControllerComp</servlet-name>
+	  	<url-pattern>/mvc2/writecomp.do</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+      <param-name>maxPostSize</param-name>
+      <param-value>1024000</param-value>
+   </context-param>
+</web-app>

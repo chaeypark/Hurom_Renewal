@@ -1,0 +1,104 @@
+@charset "UTF-8";
+ 
+/* 게시판폼 */
+.recipeWritingWrap{
+	margin: 0;
+    padding: 0;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 800px;
+	margin-top: 30px;
+	border: 1px solid #D9D9E0;
+}
+
+.recipeWritingTitle{
+	margin-bottom: 10px;
+	width: 100%;
+	border-bottom: 0.5px solid lightgray;
+	display:block;
+}
+
+.recipeWritingTitle input{
+	margin: 0 auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+	width: 790px;
+	border-style: none;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	display:block;
+}
+
+.recipeWritingContent{
+	width: 100%;
+	display:block;
+	border-bottom: 0.5px solid lightgray;
+	margin-bottom: 20px;
+}
+
+.recipeWritingContent textarea{
+	width: 790px;
+	height: 300px;
+	border-style: none;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+/* 하단 파일 첨부와 이미지 미리보기 부분 */
+#imagePreview{ 
+	width: 700px;
+	margin: 0 auto;
+}
+
+#imagePreview img{
+	width: 220px;
+	margin-bottom: 13px;
+	margin-left: 13px;
+}
+
+#recipeWritingBottom{
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#imageUpload{
+	margin-left: 242px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+#imageUpload input{
+	margin-bottom: 3px;
+}
+
+/* 하단 버튼 */
+#recipeWritingBottom button{
+	border-style: none;
+	border: 1px solid lightgray;
+	padding: 3px 10px;
+	background-color: white;
+}
+
+#recipeWritingBottom #submit{
+	background-color: #111;
+	color: #fff;
+}
+
+#recipeWritingBottom #butplus:hover{
+	border-color: #111;
+}
+
+#recipeWritingBottom #submit:hover{
+	border-color: #111;
+	background-color: #fff;
+	color: #111;
+}
+
+#recipeWritingBottom #reset:hover{
+	border-color: #111;
+}
