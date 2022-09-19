@@ -1,0 +1,139 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.offcanvas.show{
+    visibility: visible;
+}
+.offcanvas.offcanvas-top{
+    background-color: wheat;
+    position: fixed;
+    top: 50px;
+}
+.offcanvas.hiding, .offcanvas.showing{
+    
+    visibility: hidden;
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl{
+    --bs-offcanvas-height: 35vh;
+}
+.collapse li{
+    margin-bottom: 10px;
+}
+.collapsing li{
+    margin-bottom: 10px;
+}
+nav{
+    height: 60px;
+    z-index: 3000;
+}
+.navbar{
+    display: grid;
+    background-color: greenyellow;
+    grid-template-columns: 300px 600px 300px 300px;
+}
+.middle_menu>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.login_section>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    display: block;
+    background-image: url(../image/header_img/logo_black.png);
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+}
+.signup{
+    display: block;
+    background-image: url(../image/header_img/add-user.png);
+    width: 25px;
+    height: 25px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+
+}
+.login{
+    display: block;
+    background-image: url(../image/header_img/user.png);
+    width: 25px;
+    height: 25px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+
+}
+.logout{
+    display: block;
+    background-image: url(../image/header_img/logout.png);
+    width: 25px;
+    height: 25px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+
+}
+.order{
+    display: block;
+    background-image: url(../image/header_img/order.png);
+    width: 25px;
+    height: 25px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+}
+.mypage{
+    display: block;
+    background-image: url(../image/header_img/user.png);
+    width: 25px;
+    height: 25px;
+    background-size: 100% auto;
+    text-indent: -5000px;
+    background-repeat: no-repeat;
+}
+
+.depths_2{
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    top: 100px;
+    left: 10%;
+    z-index: 10000;
+}
+.collapsing{
+    transition: none;
+}
+
+.img_container{
+    position: fixed;
+    left: 40%;
+}
+.imageSet{
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imageSet>img{
+    border-radius: 100px;
+    overflow: hidden;
+}
+.middle_menu p{
+	font-size: 20px;
+	line-height: 30px;
+}

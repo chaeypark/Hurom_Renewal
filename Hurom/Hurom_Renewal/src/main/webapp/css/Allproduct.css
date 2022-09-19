@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 슬라이드 */
+.slide{
+    margin-bottom: 90px;
+}
+
+/* 사이드네비바, 중앙 */
+.products{
+	min-height: 600px;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* 네비바 */
+.side{
+    margin-top: 40px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.side ul{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.side li{
+    display: block;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.side li a{
+    color: #555;
+    padding: 11px 40px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    height: 50px;
+    
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.side .active{
+    color: rgb(22, 21, 21);
+    font-weight: 900;
+}
+
+.side li a:hover {
+    color: rgb(199, 190, 190);
+}
+
+/* 상품이미지(중앙) */
+
+.AllProductsWrap{
+	text-align:center;
+	width:900px;
+	margin:0 auto;
+}
+.card{
+    height: auto;
+    border-style: none;
+    position: relative;
+}
+
+.hover_item{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    }
+
+.hover_item img{
+    height: 100%;
+}
+
+.hover_item .over{
+    position: absolute;
+    top: 156px;
+    left: 0;
+    width: 200px;
+    height: 44px;
+    background-color: rgba(145, 187, 109, 0.77);
+    display: none; 
+}
+
+.hover_item .over_in{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hover_item .over_in p a{
+    display: block;
+    width: 100px;
+    line-height: 44px;
+}
+.over_in img{
+    width: 20px; 
+    height:20px;
+}
+
+.hover_item:hover .over{
+    display: block;
+}
+
+h5{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(48, 44, 44);
+}
+
+/* 상품 색상표 */
+.card span{
+    display: inline-block;
+    width: 14px;
+    height: 4px;
+    border: 1px solid rgb(176, 173, 173);
+}
+.ProductPaging{
+	position: absolute;
+	bottom: 0;
+	left : 50%;
+	text-align: center
+}

@@ -1,0 +1,237 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo_frame{
+    /* background-color: brown; */
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    overflow: hidden;
+}
+.logo{
+    width: 100%;
+    
+}
+
+.left{
+    position: absolute;
+    top: 35px;
+    left: 130px;
+    color:antiquewhite;
+    font-size: 20px;
+
+    
+}
+.left a{
+    color: bisque;
+}
+.right{
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    color:antiquewhite;
+    font-size: 20px;
+}
+.right a{
+    color: bisque;
+}
+
+/* main */
+.mainpicframe{
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+
+}
+.mainpic{
+    width: 100%;
+    height: 100%;
+}
+
+
+.customer_support{
+    height: 100px;
+    border-bottom: 1px solid rgb(173, 168, 168);
+}
+
+.customer_support >p{
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(34, 33, 33);
+}
+
+
+.top{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    
+    
+
+}
+.qna{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(165, 163, 163);
+    border-radius: 5%;
+    margin-right: 20px;  
+    display: grid;
+    place-items: center; 
+}
+.thumnail_headset{
+    max-width: 150px;
+    max-height: 150px;
+    
+ }
+.qna_wr{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.repair{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(165, 163, 163);
+    border-radius: 5%;
+    margin-right: 20px;
+    display: grid;
+    place-items: center; 
+}
+.repair_wr{  
+    text-align: center;
+    margin-top: 10px;
+}
+
+.manual_book{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(165, 163, 163);
+    border-radius: 5%;
+    display: grid;
+    place-items: center; 
+}
+.manual_wr{
+    text-align: center;
+    margin-top: 22px;  
+}
+
+
+
+.thumnail_repair{
+    max-width: 180px;
+    max-height: 180px;
+ }
+
+.thumnail_book{
+    max-width: 130px;
+    max-height: 130px;
+    margin-left: 40px;
+ }
+
+.frequent_qna{
+    border-top: 1px solid rgb(184, 181, 181);
+    margin-top: 70px;
+       
+}
+.frequent_qna > p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+/* 게시판 */
+a {
+    text-decoration: none;
+    color: #333;
+  }
+  a:hover {color: rgb(115, 160, 115);}
+  
+  /* 테이블 색상 (중요하지 않음) */
+  table {
+    width: 80%;
+    margin: 40px auto 10px;
+    border-collapse: collapse;
+  }
+  th {
+    height: 30px;
+    background: #80878b;
+    color: #fff;
+  }
+
+  th p{
+    font-size: 15px;
+  }
+  td, th {
+    height: 30px;
+    border: 1px solid #dbdbdb;
+    padding: 5px 20px;
+  }
+  td p{
+    font-size: 15px;
+  }
+  tr:nth-of-type(odd) { 
+      background: #eee; 
+  }
+  
+  /* 체크박스의 크기 */
+  .check {
+    width:15px;
+    height:15px;
+  }
+  
+  /* 컬럼의 너비 */
+  .select {width: 3%;}
+  .no {width: 15%;}
+  .title {/* 나머지가 자동으로 맞춰집니다. */}
+  .writer {width: 20%;}
+  .date {width: 15%;}
+  
+  /* 컬럼의 정렬 */
+  tr td:nth-child(1){text-align:center;}
+  tr td:nth-child(2){text-align:center;}
+  tr td:nth-child(3){text-align:left;}
+  tr td:nth-child(4){text-align:center;}
+  tr td:nth-child(5){text-align:center;}
+  
+  /* 페이징 버튼 */
+  .page-box {
+    width: 80%;
+    margin: 5px auto;
+    margin-bottom: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .page-box a.btn {
+    display:inline-block;
+    padding: 3px 5px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    color: #333;
+  }
+  .page-box a.btn.on {
+    background-color: #dbdbdb;
+    
+  }
+  
+  
+
+/* 푸터 */
+footer{
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+    
+ }
+
+
+
+

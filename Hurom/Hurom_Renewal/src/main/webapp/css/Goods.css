@@ -1,0 +1,265 @@
+@charset "UTF-8";
+a{
+    text-decoration: none;
+}
+
+/* 전체 */
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* 상단 제품 소개 */
+.item_info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+/* 왼쪽 이미지 */
+#imgchg{
+    width: 450px;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+}
+
+.smallImg{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+.smallImg li{
+    width: 90px;
+    height: 90px;
+}
+
+.smallImg img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+/* 오른쪽 소개 */
+.right_area{
+    width: 480px;
+}
+
+.right_area h3{
+	font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.right_area span{
+    display: inline-block;
+    width: 14px;
+    height: 4px;
+    border: 1px solid rgb(176, 173, 173);
+    margin-bottom: 10px;
+}
+
+.right_area hr{
+    background-color: rgb(228, 228, 228);
+    border: 0;
+    margin-bottom: 15px;
+    height: 1px;
+}
+
+.right_area td{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.right_area .point{
+    color: rgb(169, 169, 169);
+    padding-right: 60px;
+    font-weight: 600;
+}
+
+.effect{
+    position: relative;
+}
+
+#modal{
+    font-size: 11px;
+    padding: 3px 6px;
+    margin-left: 6px;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid rgb(189, 184, 184);
+    cursor: pointer;
+}
+
+#modal:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+#modal img{
+    width: 10px;
+    height: 10px;
+}
+
+#dis{
+    width: 300px;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: rgb(87, 87, 87);
+    font-size: 12px;
+}
+
+#dis>p{
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    font-weight: 600;
+}
+
+#dis img{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    margin: 3px 0 0 184px;
+}
+
+#dis ul{
+    width: 100%;
+    padding: 0;
+}
+
+#dis li{
+    font-weight: 800;
+    margin: 10px 16px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(213, 211, 211);
+}
+
+#dis ul li p{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#dis .del_charge{
+    font-size: 11px;
+    padding: 14px;
+}
+
+#selectOption{
+    border-radius: 0;
+    border-color: #ddd;
+    cursor: pointer;
+    padding: 3px 70px 3px 0;
+}
+
+.but{
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+	justify-content: space-between;
+}
+
+.cart{
+    width: 235px;
+    line-height: 40px;
+    border-radius: 0;
+    border: 1px solid rgb(189, 184, 184);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.cart:hover{
+    border-color: #111;
+}
+
+.buy{
+    width: 235px;
+    line-height: 40px;
+    border-radius: 0;
+    border: 1px solid #111;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buy:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+/* section */
+.section a{
+	text-decoration: none;
+	font-weight: 100;
+}
+
+#detail, #exchange, #review, #qna{
+    margin: 0 auto;
+    width: 750px;
+    margin-bottom: 20px;
+}
+
+#detail ul, #exchange ul, #review ul, #qna ul{
+    width: 750px;
+    height: 100%;
+    display: flex;
+    padding-left: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#detail li, #exchange li, #review li, #qna li{
+	width: 187.5px;
+	margin: 0;
+}
+
+#detail .point2, #exchange .point2, #review .point2, #qna .point2{
+    color: rgb(26, 25, 25);
+    border-color: rgb(26, 25, 25);
+}
+
+#detail a, #exchange a, #review a, #qna a{
+	display: inline-block;
+    width: 187.5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+ 	border-bottom: 1px solid rgb(171, 171, 171);
+    line-height: 50px;
+    color: rgb(171, 171, 171);
+}
+
+.det{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.det img{
+    width: 100%;
+}
+
+.exc{
+    width: 700px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 50px 0 30px 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.exc h4{
+	font-size: 13px;
+	font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.exc p{
+    color: rgb(99, 99, 99);
+    margin-bottom: 20px;
+}
